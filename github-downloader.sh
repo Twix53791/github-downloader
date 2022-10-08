@@ -4,8 +4,12 @@
 #  
 #  Author: Declan Cook
 #  Licence: MIT
+#
+# DEPENDENCIES
+#  - subversion
 #####################################################
 GHDOMAIN="https://github.com/"
+[[ $1 == "clone" ]] && shift
 IN=$1
 IN=${IN##$GHDOMAIN}
 BRANCH="trunk"
